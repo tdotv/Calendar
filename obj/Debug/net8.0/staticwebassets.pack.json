@@ -1,0 +1,133 @@
+{
+  "Files": [
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/obj/Debug/net8.0/scopedcss/projectbundle/Calendar.bundle.scp.css",
+      "PackagePath": "staticwebassets/Calendar.bundle.scp.css"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/Nunito-Italic-VariableFont_wght.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/Nunito-VariableFont_wght.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/Nunito-VariableFont_wght.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/OFL.txt",
+      "PackagePath": "staticwebassets/fonts/Nunito/OFL.txt"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/README.txt",
+      "PackagePath": "staticwebassets/fonts/Nunito/README.txt"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-Black.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-Black.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-BlackItalic.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-BlackItalic.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-Bold.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-Bold.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-BoldItalic.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-BoldItalic.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-ExtraBold.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-ExtraBold.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-ExtraLight.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-ExtraLight.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-Italic.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-Italic.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-Light.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-Light.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-LightItalic.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-LightItalic.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-Medium.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-Medium.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-MediumItalic.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-MediumItalic.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-Regular.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-Regular.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-SemiBold.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-SemiBold.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/fonts/Nunito/static/Nunito-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets/fonts/Nunito/static/Nunito-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/images/Figma.txt",
+      "PackagePath": "staticwebassets/images/Figma.txt"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/images/PersonaCalendar.jpg",
+      "PackagePath": "staticwebassets/images/PersonaCalendar.jpg"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/images/arrow-left.svg",
+      "PackagePath": "staticwebassets/images/arrow-left.svg"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/images/arrow-right.svg",
+      "PackagePath": "staticwebassets/images/arrow-right.svg"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/images/search-alt.svg",
+      "PackagePath": "staticwebassets/images/search-alt.svg"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Calendar.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.Calendar.props",
+      "PackagePath": "build\\Calendar.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Calendar.props",
+      "PackagePath": "buildMultiTargeting\\Calendar.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Calendar.props",
+      "PackagePath": "buildTransitive\\Calendar.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

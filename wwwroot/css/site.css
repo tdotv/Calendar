@@ -1,0 +1,240 @@
+/* fonts */
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/static/Nunito-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/static/Nunito-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/static/Nunito-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/static/Nunito-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/static/Nunito-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/static/Nunito-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito/static/Nunito-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+:root {
+    --header-height: 3.5rem;
+    /*56px*/
+
+    /* colors - hsl (оттенок, насыщение, яркость) */
+    --primary-color-hue: 238;
+    --light-color-lightness: 98%;
+    --smoke-color-lightness: 88%;
+    --dark-color-lightness: 17%;
+
+    --color-light: hsl(223, 100%, var(--white-color-lightness));
+    --color-smoke: hsl(223, 20%, var(--light-color-lightness));
+    --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+    --color-primary: hsl(var(--primary-color-hue), 100%, 63%);
+
+    --image-filter: none;
+
+    /* font - .5rem = 8px | 1rem = 16px */
+    --body-font: "Nunito", sans-serif;
+    --h1-font-size: 1.65rem;
+    --h2-font-size: 1.45rem;
+    --h3-font-size: 1.25rem;
+
+    --normal-font-size: 1.15rem;
+    --small-font-size: 1rem;
+
+    --font-medium: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* margenes */
+    --m-0-5: .5rem;
+    --m-0-75: .75rem;
+    --m-1: 1rem;
+    --m-1-5: 1.5rem;
+    --m-2: 2rem;
+    --m-2-5: 2.5rem;
+    --m-3: 3rem;
+
+    --card-padding: 1.8rem 0.8rem;
+    --border-radius: 0.5rem;
+    --box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+}
+
+@media screen and (max-width:1440px) {
+    :root {
+        --h1-font-size: 1.45rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.15rem;
+
+        --normal-font-size: 1.05rem;
+        --small-font-size: 0.95rem;
+    }
+
+}
+
+/* base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    line-height: 1.7;
+    font-weight: var(--font-medium);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-dark);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: var(--font-semi-bold);
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-bottom: 0;
+    border-radius: 0%;
+    filter: var(--image-filter);
+}
+
+/* layout */
+.container {
+    padding-left: 33px;
+    padding-right: 33px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    line-height: 1;
+    border-radius: var(--border-radius);
+    border-width: inherit;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+@keyframes button-push {
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-default {
+    color: #fff;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: var(--color-primary);
+    transform: perspective(1px) translateZ(0);
+}
+
+.btn-default:hover {
+    animation-name: button-push;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
