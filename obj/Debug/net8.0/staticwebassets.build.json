@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "W8sSj0sdkJ5oSb98Mrr28TubLn0axy1G75AqTXNLSmM=",
+  "Hash": "OdZte6L9O6ayWISgr/j3iw/LEZABsgNyvQGNwlElX1Y=",
   "Source": "Calendar",
   "BasePath": "_content/Calendar",
   "Mode": "Default",
@@ -492,6 +492,25 @@
       "OriginalItemSpec": "wwwroot/images/arrow-right.svg"
     },
     {
+      "Identity": "/home/tdotv/MyDev/Calendar/wwwroot/images/check-box.svg",
+      "SourceId": "Calendar",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tdotv/MyDev/Calendar/wwwroot/",
+      "BasePath": "_content/Calendar",
+      "RelativePath": "images/check-box.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/check-box.svg"
+    },
+    {
       "Identity": "/home/tdotv/MyDev/Calendar/wwwroot/images/Figma.txt",
       "SourceId": "Calendar",
       "SourceType": "Discovered",
@@ -528,6 +547,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/PersonaCalendar.jpg"
+    },
+    {
+      "Identity": "/home/tdotv/MyDev/Calendar/wwwroot/images/plus.svg",
+      "SourceId": "Calendar",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/tdotv/MyDev/Calendar/wwwroot/",
+      "BasePath": "_content/Calendar",
+      "RelativePath": "images/plus.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/plus.svg"
     },
     {
       "Identity": "/home/tdotv/MyDev/Calendar/wwwroot/images/search-alt.svg",

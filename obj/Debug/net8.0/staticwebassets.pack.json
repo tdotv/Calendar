@@ -105,6 +105,14 @@
       "PackagePath": "staticwebassets/images/arrow-right.svg"
     },
     {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/images/check-box.svg",
+      "PackagePath": "staticwebassets/images/check-box.svg"
+    },
+    {
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/images/plus.svg",
+      "PackagePath": "staticwebassets/images/plus.svg"
+    },
+    {
       "Id": "/home/tdotv/MyDev/Calendar/wwwroot/images/search-alt.svg",
       "PackagePath": "staticwebassets/images/search-alt.svg"
     },

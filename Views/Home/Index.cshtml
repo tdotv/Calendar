@@ -7,13 +7,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css -->
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-
-    @* <title>@ViewData["Title"]Calendar</title> *@
+    @* <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> *@
 </head>
 
 <body>
     <main class="main-content">
+        <section class="calendar">
+            <div class="main-container">
 
+                <div class="left-bar">
+                    <a class="btn btn-default"><img src="~/images/plus.svg" alt="create" class="icon create">Создать</a>
+                    <div class="calendar-widget" id="calendar"></div>
+                    <section class="calendar-section">
+                        <div class="calendar-header">
+                            <img src="~/images/check-box.svg" alt="check-box" class="icon">
+                            <h3>Мои календари:</h3>
+                        </div>
+                        <div class="calendar-list">
+                            <div class="calendar-item">Календарь цеха</div>
+                            <div class="calendar-item">Личный календарь</div>
+                        </div>
+                    </section>
+                </div>
+                <div class="calendar-main">
+                    <div class="current-month">
+                        <ul class="week-days">
+                            <li>Пн</li>
+                            <li>Вт</li>
+                            <li>Ср</li>
+                            <li>Чт</li>
+                            <li>Пт</li>
+                            <li>Сб</li>
+                            <li>Вс</li>
+                        </ul>
+
+                        <div class="weeks">
+                            <div class="first">
+                                <span class="last-month">28</span>
+                                <span class="last-month">29</span>
+                                <span class="last-month">30</span>
+                                <span class="last-month">31</span>
+                                <span>01</span>
+                                <span>02</span>
+                                <span>03</span>
+                            </div>
+
+                            <div class="second">
+                                <span>04</span>
+                                <span>05</span>
+                                <span class="calendar-event">06</span>
+                                <span class="calendar-event">07</span>
+                                <span>08</span>
+                                <span>09</span>
+                                <span class="calendar-event">10</span>
+                            </div>
+
+                            <div class="third">
+                                <span class="calendar-event">11</span>
+                                <span>12</span>
+                                <span>13</span>
+                                <span class="calendar-event">14</span>
+                                <span class="active"><span>15</span></span>
+                                <span>16</span>
+                                <span>17</span>
+                            </div>
+
+                            <div class="fourth">
+                                <span>18</span>
+                                <span>19</span>
+                                <span>20</span>
+                                <span>21</span>
+                                <span>22</span>
+                                <span>23</span>
+                                <span>24</span>
+                            </div>
+
+                            <div class="fifth">
+                                <span>25</span>
+                                <span>26</span>
+                                <span>27</span>
+                                <span>28</span>
+                                <span>29</span>
+                                <span>30</span>
+                                <span>31</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-events">
+                    <div class="chosen-date">
+                        <h3>Вс, Июнь 16, 2024</h3>
+                    </div>
+                    <div class="list-events">
+                        <ul class="events">
+                            <li>
+                                <div class="event-container">
+                                    <div class="event-info">
+                                        <div class="start-time">10:00</div>
+                                        <div class="duration">1 час</div>
+                                    </div>
+                                    <div class="event-title">Ужсужс</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="event-container">
+                                    <div class="event-info">
+                                        <div class="start-time">10:00</div>
+                                        <div class="duration">1 час</div>
+                                    </div>
+                                    <div class="event-title">Важное Совещание</div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="event-container">
+                                    <div class="event-info">
+                                        <div class="start-time">10:00</div>
+                                        <div class="duration">1 час</div>
+                                    </div>
+                                    <div class="event-title">Почему каелндарь такой трудный</div>
+                                </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
