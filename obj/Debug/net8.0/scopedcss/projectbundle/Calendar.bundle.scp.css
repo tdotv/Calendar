@@ -95,6 +95,7 @@
   border: 2px solid;
   padding: 0.35rem 1rem;
   border-radius: var(--border-radius);
+  background-color: var(--color-light);;
 }
 
 .dropdown[b-uy2ta6uuxa] {
