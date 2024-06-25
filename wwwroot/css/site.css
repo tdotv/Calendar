@@ -270,7 +270,7 @@ h3 {
 
 .main-container {
     display: grid;
-    grid-template-columns: 18% 60% 17.75%;
+    grid-template-columns: auto 60% auto;
     grid-gap: 2rem;
     padding-left: 33px;
     padding-right: 33px;
@@ -353,7 +353,21 @@ h3 {
 }
 
 .chosen-date {
-    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-weight: var(--font-semi-bold);
+}
+
+.chosen-date h3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 100%;    /* 50% */
+    height: 2px;
+    background-color: #b7b7b7;
 }
 
 .calendar__day span.active {
@@ -439,22 +453,36 @@ input[type="checkbox"]:checked::before {
 
 /* calendar widget */
 
-.calendar-widget-container {
-    position: relative;
-}
-
 .calendar-widget table {
     display: table;
     table-layout: fixed;
-    width: 100%;
+    max-width: 300px;
     border-collapse: collapse;
     margin-top: var(--m-1-5);
+}
+
+.calendar-widget-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .calendar-widget th,
 .calendar-widget td {
     padding: 0.5rem;
     text-align: center;
+    width: 1 / 7 * 100%;
+}
+
+.calendar-widget-days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.calendar-widget-days > div {
+    flex: 0 0 14.285%;  /* 1/7 of the container */
+    padding: 0.5rem;
 }
 
 .calendar-widget  .current-date {
@@ -466,7 +494,6 @@ input[type="checkbox"]:checked::before {
 .calendar-section {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .calendar-header {
@@ -489,10 +516,6 @@ input[type="checkbox"]:checked::before {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1440px) {
-
-    .main-container {
-        grid-template-columns: auto 60% auto;
-    }
 
     .calendar-widget table {
         max-width: 600px;

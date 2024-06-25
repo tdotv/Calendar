@@ -98,8 +98,9 @@
 }
 
 .dropdown[b-uy2ta6uuxa] {
-  position: relative;
-  display: inline-block;
+  /* position: relative;
+  display: inline-block; */
+  display: none;
 }
 
 .dropdown-content[b-uy2ta6uuxa] {
