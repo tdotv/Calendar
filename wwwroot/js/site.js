@@ -47,3 +47,21 @@
 }
 
 createCalendar();
+
+const btnToday = document.getElementById('btn-today');
+
+function setActiveDay() {
+    const calendarDays = document.querySelectorAll('.calendar__day.day span');
+
+    const today = new Date().getDate();
+
+    calendarDays.forEach(day => {
+        day.classList.remove('active');
+        if (Number(day.textContent) === today) {
+            day.classList.add('active');
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', setActiveDay);
+btnToday.addEventListener('click', setActiveDay);
