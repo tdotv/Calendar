@@ -356,6 +356,7 @@ h3 {
     position: relative;
     display: flex;
     justify-content: center;
+    text-align: center;
     font-weight: var(--font-semi-bold);
 }
 
@@ -453,9 +454,9 @@ input[type="checkbox"]:checked::before {
 
 /* my calendars */
 
-.calendar-section {
+.user-calendars {
     display: none;          /* !!! */
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
 }
 

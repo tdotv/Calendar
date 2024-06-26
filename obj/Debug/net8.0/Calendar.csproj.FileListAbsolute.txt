@@ -100,3 +100,4 @@
 /home/tdotv/MyDev/Calendar/obj/Debug/net8.0/Calendar.pdb
 /home/tdotv/MyDev/Calendar/obj/Debug/net8.0/Calendar.genruntimeconfig.cache
 /home/tdotv/MyDev/Calendar/obj/Debug/net8.0/ref/Calendar.dll
+/home/tdotv/MyDev/Calendar/obj/Debug/net8.0/Calendar.csproj.AssemblyReference.cache
