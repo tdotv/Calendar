@@ -1,4 +1,6 @@
-﻿function createCalendar() {
+﻿const btnToday = document.getElementById('btn-today');
+
+function createCalendar() {
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
     const currentMonth = currentDate.getMonth();
@@ -46,10 +48,6 @@
     calendar.appendChild(table);
 }
 
-createCalendar();
-
-const btnToday = document.getElementById('btn-today');
-
 function setActiveDay() {
     const calendarDays = document.querySelectorAll('.calendar__day.day span');
 
@@ -63,5 +61,44 @@ function setActiveDay() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', setActiveDay);
-btnToday.addEventListener('click', setActiveDay);
+function getHomePage() {
+    if (hasUnsavedData()) {
+        if (confirm('Вы действительно хотите перейти? Несохраненные данные будут потеряны.')) {     // Toaster or Alertify ???
+            window.location.href = '/';
+            setActiveDay();
+        }
+    } else {
+        window.location.href = '/';
+        setActiveDay();
+    }
+}
+
+function hasUnsavedData() {
+    if (window.location.pathname === "/CalendarEvent/Create" || window.location.pathname === "/CalendarEvent/Edit") {
+        const titleInput = document.getElementById('Name');
+        const startDateInput = document.getElementById('StartDate');
+        const endDateInput = document.getElementById('EndDate');
+        const locationInput = document.getElementById('Location');
+        const descriptionInput = document.getElementById('Description');
+
+        return titleInput.value !== '' ||
+            startDateInput.value !== '' ||
+            endDateInput.value !== '' ||
+            locationInput.value !== '' ||
+            descriptionInput.value !== '';
+    }
+}
+
+(function () {
+    if (window.location.pathname === "/") {
+        document.addEventListener('DOMContentLoaded', setActiveDay);
+        createCalendar();
+    }
+
+    if (window.location.pathname === "/") {
+        btnToday.addEventListener('click', setActiveDay);
+    }
+    else {
+        btnToday.addEventListener('click', getHomePage);
+    }
+})();

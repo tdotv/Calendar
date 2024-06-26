@@ -16,7 +16,9 @@
             <div class="main-container">
 
                 <div class="left-bar">
-                    <a class="btn btn-default"><img src="~/images/plus.svg" alt="create" class="icon create">Создать</a>
+                    <a asp-controller="CalendarEvent" asp-action="Create" class="btn btn-default">
+                        <img src="~/images/plus.svg" alt="create" class="icon create">
+                        Создать</a>
                     <div class="calendar-widget-container">
                         <div class="calendar-widget" id="calendar"></div>
                     </div>
