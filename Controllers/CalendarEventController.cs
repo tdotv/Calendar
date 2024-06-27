@@ -42,11 +42,11 @@ namespace Calendar.Controllers
                     Description = eventViewModel.Description,
                 };
                 _eventRepository.Add(calendarEvent);
-                // TempData["success"] = "Car created successfully";
+                TempData["success"] = "Event created successfully";
                 return RedirectToAction("Index");
             }
             else
-                ModelState.AddModelError("", "Can't create new car");
+                ModelState.AddModelError("", "Can't create new event");
             return View(eventViewModel);
         }
     }

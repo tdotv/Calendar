@@ -1,0 +1,49 @@
+@model IEnumerable<CalendarEvent>
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+</style>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Местоположение</th>
+                <th>Начало</th>
+                <th>Окончание</th>
+                <th>Описание</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Location</td>
+                    <td>@item.StartDate.ToString("yyyy-MM-dd HH:mm")</td>
+                    <td>@item.EndDate.ToString("yyyy-MM-dd HH:mm")</td>
+                    <td>@item.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>

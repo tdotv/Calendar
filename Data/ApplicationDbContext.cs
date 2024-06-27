@@ -26,5 +26,7 @@ public class ApplicationDbContext : DbContext
             entity.Property(e => e.EndDate).IsRequired();
             entity.Property(e => e.Description).HasMaxLength(500);
         });
+        // dotnet ef migrations add InitialMigration
+        // dotnet ef database update
     }
 }
