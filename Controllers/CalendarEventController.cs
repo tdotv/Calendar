@@ -3,7 +3,6 @@ using Calendar.Interfaces;
 using Calendar.Models;
 using Calendar.ViewModels;
 using Calendar.Data;
-using System.Data.Entity;
 
 namespace Calendar.Controllers
 {
@@ -18,10 +17,46 @@ namespace Calendar.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+        private static readonly List<CalendarEvent> events =
+        [
+            new CalendarEvent
+            {
+                EventId = 1,
+                Name = "Team Meeting",
+                Location = "Conference Room A",
+                StartDate = new DateTime(2024, 6, 27, 10, 0, 0),
+                EndDate = new DateTime(2024, 6, 27, 11, 30, 0),
+                Description = "Weekly team meeting to discuss project progress."
+            },
+            new CalendarEvent
+            {
+                EventId = 2,
+                Name = "Client Presentation",
+                Location = "Virtual Meeting",
+                StartDate = new DateTime(2024, 6, 27, 14, 0, 0),
+                EndDate = new DateTime(2024, 6, 27, 15, 30, 0),
+                Description = "Present project update to client."
+            }
+        ];
+
+        public IActionResult Index()
         {
-            var myEntities = await _context.CalendarEvent.ToListAsync();
-            return View(myEntities);
+            return View(events);
+
+            // var myEntities = await _context.CalendarEvent.ToListAsync();
+            // return View(myEntities);
+        }
+
+        public IActionResult Details(int id)
+        {
+            var @event = events.FirstOrDefault(e => e.EventId == id);
+
+            if (@event == null)
+            {
+                return NotFound();
+            }
+
+            return View(@event);
         }
 
         [HttpGet]

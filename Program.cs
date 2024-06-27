@@ -53,6 +53,13 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}"
+);
+
+// app.MapControllerRoute(
+//     name: "calendar-details",
+//     pattern: "calendar/{id:int}",
+//     defaults: new { controller = "CalendarEvent", action = "Index" }
+// );
 
 app.Run();

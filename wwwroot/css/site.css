@@ -91,16 +91,16 @@
     --box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
 
+/* 885 OK */
 @media screen and (max-width:1440px) {
     :root {
-        --h1-font-size: 1.45rem;
-        --h2-font-size: 1.25rem;
-        --h3-font-size: 1.15rem;
+        --h1-font-size: 1.35rem;
+        --h2-font-size: 1.15rem;
+        --h3-font-size: 1.05rem;
 
-        --normal-font-size: 1.05rem;
-        --small-font-size: 0.95rem;
+        --normal-font-size: 0.95rem;
+        --small-font-size: 0.85rem;
     }
-
 }
 
 /* base */
@@ -262,6 +262,7 @@ h3 {
 }
 
 .calendar {
+    background-color: white;
     border-radius: var(--border-radius);
     transition: .9s;
     transform-style: preserve-3d;
@@ -352,25 +353,6 @@ h3 {
     border-radius: 15px;
 }
 
-.chosen-date {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-weight: var(--font-semi-bold);
-}
-
-.chosen-date h3::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -5px;
-    width: 100%;    /* 50% */
-    height: 2px;
-    background-color: #b7b7b7;
-}
-
 .calendar__day span.active {
     position: relative;
 }
@@ -380,6 +362,54 @@ h3 {
     border-radius: 50%;
     padding: 0.5rem 0.785rem;
     width: auto;
+}
+
+.chosen-date {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: var(--font-semi-bold);
+}
+
+/* stroke under the date */
+/* .chosen-date h3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #b7b7b7;
+} */
+
+.event-card {
+    background-color: white;
+    border: 1px solid var(--color-smoke);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    margin-top: var(--m-0-5);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.event-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.event-time {
+    margin-right: 0.5rem;
+    text-align: right;
+    font-size: var(--small-font-size);
+}
+
+.event-title {
+    flex-grow: 1;
 }
 
 /* RIGHT BAR = CALENDAR EVENTS */
@@ -405,11 +435,10 @@ h3 {
 }
 
 .event-title {
-    font-size: var(--body-font);
+    font-size: var(--normal-font-size);
     font-weight: var(--font-semi-bold);
     text-align: right;
     margin-left: var(--m-1-5);
-    ;
 }
 
 input[type="checkbox"] {
@@ -455,7 +484,8 @@ input[type="checkbox"]:checked::before {
 /* my calendars */
 
 .user-calendars {
-    display: none;          /* !!! */
+    display: none;
+    /* !!! */
     /* display: flex; */
     flex-direction: column;
 }
@@ -480,10 +510,16 @@ input[type="checkbox"]:checked::before {
 /* calendar widget */
 
 .calendar-widget table {
+    background-color: white;
+    border: 1px solid var(--color-smoke);
+    border-collapse: collapse;
+    border-radius: var(--border-radius);
     display: table;
     table-layout: fixed;
+
     max-width: 300px;
-    border-collapse: collapse;
+    max-height: 300px;
+    
     margin-top: var(--m-1-5);
 }
 
@@ -497,7 +533,7 @@ input[type="checkbox"]:checked::before {
 .calendar-widget td {
     padding: 0.5rem;
     text-align: center;
-    width: 1 / 7 * 100%;
+    width: 100%;
 }
 
 .calendar-widget-days {
@@ -506,12 +542,12 @@ input[type="checkbox"]:checked::before {
     justify-content: center;
 }
 
-.calendar-widget-days > div {
+.calendar-widget-days>div {
     flex: 0 0 14.285%;  /* 1/7 of the container */
     padding: 0.5rem;
 }
 
-.calendar-widget  .current-date {
+.calendar-widget .current-date {
     font-weight: bold;
 }
 
@@ -550,6 +586,7 @@ input[type="checkbox"]:checked::before {
     }
 
     .main-container {
+        grid-gap: 1rem;
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -563,7 +600,7 @@ input[type="checkbox"]:checked::before {
         padding: 2rem 3rem;
     }
 
-    .event-container {
+    .event-card {
         flex-wrap: wrap-reverse;
         justify-content: space-evenly;
     }

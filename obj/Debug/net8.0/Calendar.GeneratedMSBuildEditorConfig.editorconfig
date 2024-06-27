@@ -22,6 +22,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FsZW5kYXJFdmVudC9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/tdotv/MyDev/Calendar/Views/CalendarEvent/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FsZW5kYXJFdmVudC9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/tdotv/MyDev/Calendar/Views/CalendarEvent/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FsZW5kYXJFdmVudC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

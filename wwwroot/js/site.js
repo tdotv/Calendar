@@ -1,4 +1,10 @@
 ﻿const btnToday = document.getElementById('btn-today');
+const eventCards = document.querySelectorAll('.event-card');
+const dateBlock = document.querySelector('.chosen-date h3');
+
+const options = { weekday: 'short', month: 'long', day: 'numeric', year: 'numeric' };
+const currentDate = new Date();
+const formattedDate = currentDate.toLocaleDateString('ru-RU', options);
 
 function createCalendar() {
     const currentDate = new Date();
@@ -89,10 +95,22 @@ function hasUnsavedData() {
     }
 }
 
+function getCurrentDate() {
+    const dateBlock = document.querySelector('.chosen-date h3');
+    if (dateBlock) {
+        dateBlock.textContent = formattedDate;
+    } else {
+        console.error('Не удалось найти элемент с классом .chosen-date h3');
+    }
+}
+
 (function () {
     if (window.location.pathname === "/") {
         document.addEventListener('DOMContentLoaded', setActiveDay);
+
         createCalendar();
+
+        getCurrentDate();
     }
 
     if (window.location.pathname === "/") {
