@@ -1,8 +1,7 @@
 using Calendar.Interfaces;
 using Calendar.Repositories;
 using Calendar.Data;
-using Microsoft.AspNetCore.Localization;
-using System.Globalization;
+using Microsoft.EntityFrameworkCore;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +15,7 @@ builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     // options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseFirebird(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
 var app = builder.Build();
@@ -28,6 +28,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 //  Globalization and Localization
+// -----------------------------------------
 // var supportedCultures = new[]
 // {
 //  new CultureInfo("en-US"),
@@ -42,6 +43,7 @@ if (!app.Environment.IsDevelopment())
 //     // UI strings that we have localized.
 //     SupportedUICultures = supportedCultures
 // });
+// -----------------------------------------
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

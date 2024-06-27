@@ -3,6 +3,7 @@ using Calendar.Interfaces;
 using Calendar.Models;
 using Calendar.ViewModels;
 using Calendar.Data;
+using System.Data.Entity;
 
 namespace Calendar.Controllers
 {
@@ -17,9 +18,10 @@ namespace Calendar.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var myEntities = await _context.CalendarEvent.ToListAsync();
+            return View(myEntities);
         }
 
         [HttpGet]
