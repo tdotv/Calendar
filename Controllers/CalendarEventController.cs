@@ -42,9 +42,6 @@ namespace Calendar.Controllers
         public IActionResult Index()
         {
             return View(events);
-
-            // var myEntities = await _context.CalendarEvent.ToListAsync();
-            // return View(myEntities);
         }
 
         public IActionResult Details(int id)

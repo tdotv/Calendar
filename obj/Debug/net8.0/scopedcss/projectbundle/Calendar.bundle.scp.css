@@ -101,11 +101,14 @@
 .dropdown[b-uy2ta6uuxa] {
   /* position: relative;
   display: inline-block; */
+
+  /*                                                            !!! */
   display: none;
 }
 
 .dropdown-content[b-uy2ta6uuxa] {
-  display: none;
+  /*                                                            !!! */
+  display: none;  
   position: absolute;
   background-color: var(--color-light);
   min-width: 7.5rem;

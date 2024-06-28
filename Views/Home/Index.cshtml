@@ -16,7 +16,8 @@
             <div class="main-container">
 
                 <div class="left-bar">
-                    <a asp-controller="CalendarEvent" asp-action="Create" class="btn btn-default">
+                    <a href="#openModal" class="btn btn-default" id="open-modal"> @* asp-controller="CalendarEvent"
+                        asp-action="Create" *@
                         <img src="~/images/plus.svg" alt="create" class="icon create">
                         Создать</a>
                     <div class="calendar-widget-container">
@@ -110,7 +111,7 @@
                     <div class="list-events">
                         <ul class="events">
                             <li>
-                                <a asp-controller="CalendarEvent" asp-action="Details">
+                                <a href="#openModal"> @* asp-controller="CalendarEvent" asp-action="Details" *@
                                     <div class="event-card">
                                         <div class="event-time">
                                             <div class="start-time">10:00</div>
@@ -143,5 +144,35 @@
                 </div>
             </div>
         </section>
+        <div id="openModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <ul>
+                            <li>
+                                <a><img src="~/images/edit.svg" alt="edit" class="icon"></a>
+                                <h3>Редактировать</h3>
+                            </li>
+                            <li>
+                                <a><img src="~/images/delete.svg" alt="delete" class="icon"></a>
+                                <h3>Удалить</h3>
+                            </li>
+                            <li>
+                                <a><img src="~/images/tag.svg" alt="tag" class="icon"></a>
+                                <h3>Добавить метку</h3>
+                            </li>
+                        </ul>
+                        <a href="#close" title="Close" class="close">×</a>
+                    </div>
+                    <div class="modal-body">
+                        <h2>Заголовок</h2>
+                        <div class="time-info">
+                            <img src="~/images/time.svg" alt="time" class="icon">
+                            <p>Вс, Июнь 16, 2024 | 17:00 - 17:30</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>

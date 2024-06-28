@@ -58,10 +58,14 @@ function setActiveDay() {
     const calendarDays = document.querySelectorAll('.calendar__day.day span');
 
     const today = new Date().getDate();
+    const currentMonth = currentDate.getMonth();
 
     calendarDays.forEach(day => {
         day.classList.remove('active');
-        if (Number(day.textContent) === today) {
+
+        // Тут есть баг, что предыдудщего месяца тоже выделяется
+        // Он решается путем создания динамичского календаря, а не статического (как в данный момент написания функции)
+        if (Number(day.textContent) === today && currentDate.getMonth() === currentMonth) {
             day.classList.add('active');
         }
     });
@@ -79,6 +83,7 @@ function getHomePage() {
     }
 }
 
+// Есть ли лучше решение?
 function hasUnsavedData() {
     if (window.location.pathname === "/CalendarEvent/Create" || window.location.pathname === "/CalendarEvent/Edit") {
         const titleInput = document.getElementById('Name');
@@ -95,6 +100,9 @@ function hasUnsavedData() {
     }
 }
 
+// Здесь он просто получает текущую дату, но это не соответствует изначальным целям при проектировании
+// Пользователь должен выбирать дату, она меняется в .chosen-date и отображает какие events созданы для этой даты
+// Также решается путем добавления БД и бизнес-логики
 function getCurrentDate() {
     const dateBlock = document.querySelector('.chosen-date h3');
     if (dateBlock) {
@@ -107,7 +115,7 @@ function getCurrentDate() {
 (function () {
     if (window.location.pathname === "/") {
         document.addEventListener('DOMContentLoaded', setActiveDay);
-
+        
         createCalendar();
 
         getCurrentDate();

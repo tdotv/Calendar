@@ -100,11 +100,14 @@
 .dropdown {
   /* position: relative;
   display: inline-block; */
+
+  /*                                                            !!! */
   display: none;
 }
 
 .dropdown-content {
-  display: none;
+  /*                                                            !!! */
+  display: none;  
   position: absolute;
   background-color: var(--color-light);
   min-width: 7.5rem;
