@@ -1,0 +1,136 @@
+.modal {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 1050;
+    opacity: 0;
+
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in;
+
+    pointer-events: none;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+@media (min-width: 1250px) {
+    .modal-dialog {
+        max-width: 63rem;
+        margin: 6rem auto;
+    }
+}
+
+@media (max-width: 1250px) {
+    .modal-dialog {
+        max-width: 44rem;
+        margin: 6rem auto;
+    }
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-light);
+    background-clip: padding-box;
+    border: 1px solid var(--color-smoke);
+    border-radius: var(--border-radius);
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    }
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    /* border-bottom: 1px solid #eceeef; */
+}
+
+.close {
+    float: right;
+    font-weight: 700;
+    color: var(--color-dark);
+    text-shadow: 0 1px 0 var(--color-light);
+    opacity: .5;
+    text-decoration: none;
+}
+
+.close:focus,
+.close:hover {
+    color: var(--color-dark);
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: var(--card-padding);
+    overflow: auto;
+    margin-left: 2rem;
+}
+
+.modal-header a {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    color: inherit;
+}
+
+.modal-content ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.modal-content ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.modal-content ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.time-info {
+    display: flex;
+    align-items: center;
+}
+
+.time-info .icon {
+    margin-right: 8px;
+}

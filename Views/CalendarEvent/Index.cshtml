@@ -1,0 +1,29 @@
+@model IEnumerable<Calendar.Models.CalendarEvent>
+
+<h1>Calendar Events</h1>
+
+<table class="table" style="margin-top: 5rem; border-spacing:3rem;">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var @obj in Model)
+        {
+            <tr>
+                <td>@obj.Name</td>
+                <td>@obj.Location</td>
+                <td>@obj.StartDate.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>@obj.EndDate.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@obj.EventId">View</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
