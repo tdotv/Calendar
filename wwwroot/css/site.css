@@ -1,4 +1,4 @@
-@import url('../css/event_details.css');
+@import url('../css/event.css');
 
 /* fonts */
 @font-face {
@@ -273,7 +273,7 @@ h3 {
 
 .main-container {
     display: grid;
-    grid-template-columns: auto 60% auto;
+    grid-template-columns: 77% auto;
     grid-gap: 2rem;
     padding-left: 33px;
     padding-right: 33px;
@@ -416,7 +416,6 @@ h3 {
 
 /* RIGHT BAR = CALENDAR EVENTS */
 
-/* events  */
 .event-container {
     display: flex;
     justify-content: space-between;
@@ -471,99 +470,9 @@ input[type="checkbox"]:checked::before {
     line-height: 20px;
 }
 
-/* LEFT BAR */
-
-.left-bar {
-    display: block;
-}
-
-.left-bar li {
-    display: flex;
-    align-items: center;
-    margin-bottom: var(--m-0-75);
-}
-
-/* my calendars */
-
-.user-calendars {
-    display: none;
-    /*                                                                      !!!     */
-    /* display: flex; */
-    flex-direction: column;
-}
-
-.calendar-header {
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: var(--m-1);
-    margin-top: var(--m-1-5);
-    font-weight: var(--font-semi-bold);
-}
-
-.calendar-header>img {
-    margin-right: var(--m-0-5);
-}
-
-.calendar-list {
-    display: flex;
-    flex-direction: column;
-}
-
-/* calendar widget */
-
-.calendar-widget table {
-    border-collapse: collapse;
-    display: table;
-    table-layout: fixed;
-
-    max-width: 300px;
-    max-height: 300px;
-    
-    margin-top: var(--m-1-5);
-}
-
-.calendar-widget-container {
-    position: relative;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.calendar-widget th,
-.calendar-widget td {
-    padding: 0.5rem;
-    text-align: center;
-    width: 100%;
-}
-
-.calendar-widget-days {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.calendar-widget-days>div {
-    flex: 0 0 14.285%;  /* 1/7 of the container */
-    padding: 0.5rem;
-}
-
-.calendar-widget .current-date {
-    font-weight: bold;
-}
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1440px) {
-
-    .calendar-widget table {
-        max-width: 600px;
-    }
-
-    .calendar-widget th,
-    .calendar-widget td {
-        padding: 0.5rem;
-        font-size: var(--small-font-size);
-    }
-
     .calendar-event::before {
         left: 1rem;
         width: 0.35rem;
@@ -580,7 +489,7 @@ input[type="checkbox"]:checked::before {
         column-gap: 2rem;
     }
 
-    .nav-lsit-day {
+    .nav-list-day {
         column-gap: 1rem;
     }
 
@@ -588,11 +497,6 @@ input[type="checkbox"]:checked::before {
         grid-gap: 1rem;
         padding-left: 16px;
         padding-right: 16px;
-    }
-
-    .calendar-widget th,
-    .calendar-widget td {
-        padding: 0.25rem;
     }
 
     .week-days {

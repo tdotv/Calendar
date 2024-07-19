@@ -18,10 +18,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/tdotv/MyDev/Calendar
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/tdotv/MyDev/Calendar/Views/CalendarEvent/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FsZW5kYXJFdmVudC9DcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [/home/tdotv/MyDev/Calendar/Views/CalendarEvent/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FsZW5kYXJFdmVudC9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

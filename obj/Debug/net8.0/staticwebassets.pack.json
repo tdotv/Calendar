@@ -5,8 +5,8 @@
       "PackagePath": "staticwebassets/Calendar.bundle.scp.css"
     },
     {
-      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/css/event_details.css",
-      "PackagePath": "staticwebassets/css/event_details.css"
+      "Id": "/home/tdotv/MyDev/Calendar/wwwroot/css/event.css",
+      "PackagePath": "staticwebassets/css/event.css"
     },
     {
       "Id": "/home/tdotv/MyDev/Calendar/wwwroot/css/site.css",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PboFZb+4h5jps6s7rscvDLMjIsAhIUXvRPUIhMS55qg=",
+  "Hash": "5gXp8h6J3KODgA21Y6bQNJJPh+HIlci4JV8dcmxcHa4=",
   "Source": "Calendar",
   "BasePath": "_content/Calendar",
   "Mode": "Default",
@@ -55,12 +55,12 @@
       "OriginalItemSpec": "/home/tdotv/MyDev/Calendar/obj/Debug/net8.0/scopedcss/projectbundle/Calendar.bundle.scp.css"
     },
     {
-      "Identity": "/home/tdotv/MyDev/Calendar/wwwroot/css/event_details.css",
+      "Identity": "/home/tdotv/MyDev/Calendar/wwwroot/css/event.css",
       "SourceId": "Calendar",
       "SourceType": "Discovered",
       "ContentRoot": "/home/tdotv/MyDev/Calendar/wwwroot/",
       "BasePath": "_content/Calendar",
-      "RelativePath": "css/event_details.css",
+      "RelativePath": "css/event.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,7 +71,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/event_details.css"
+      "OriginalItemSpec": "wwwroot/css/event.css"
     },
     {
       "Identity": "/home/tdotv/MyDev/Calendar/wwwroot/css/site.css",

@@ -5,44 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- css -->
-    @* <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> *@
 </head>
 
 <body>
     <main class="main-content">
         <section class="calendar-section">
             <div class="main-container">
-
-                <div class="left-bar">
-                    <a href="#openModal" class="btn btn-default" id="open-modal"> @* asp-controller="CalendarEvent"
-                        asp-action="Create" *@
-                        <img src="~/images/plus.svg" alt="create" class="icon create">
-                        Создать</a>
-                    <div class="calendar-widget-container">
-                        <div class="calendar-widget" id="calendar"></div>
-                    </div>
-                    <div class="user-calendars">
-                        <div class="calendar-header">
-                            <img src="~/images/check-box.svg" alt="check-box" class="icon">
-                            <h3>Мои календари:</h3>
-                        </div>
-                        <div class="calendar-list">
-                            <ul>
-                                <li class="calendar-item">
-                                    <input type="checkbox" id="checkbox1">
-                                    <label for="checkbox1">Календарь цеха</label>
-                                </li>
-                                <li class="calendar-item">
-                                    <input type="checkbox" id="checkbox2">
-                                    <label for="checkbox2">Личный календарь</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="calendar">
                     <div class="calendar__header">
                         <div>Пн</div>
@@ -111,7 +79,7 @@
                     <div class="list-events">
                         <ul class="events">
                             <li>
-                                <a href="#openModal"> @* asp-controller="CalendarEvent" asp-action="Details" *@
+                                <a href="#openModalDetails"> @* asp-controller="CalendarEvent" asp-action="Details" *@
                                     <div class="event-card">
                                         <div class="event-time">
                                             <div class="start-time">10:00</div>
@@ -144,7 +112,7 @@
                 </div>
             </div>
         </section>
-        <div id="openModal" class="modal">
+        <div id="openModalDetails" class="modal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
